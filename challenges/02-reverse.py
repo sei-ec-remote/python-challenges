@@ -14,7 +14,6 @@ from posixpath import split
 string = input("Enter a string: ")
 
 def reverse_string(sample_string):
-    string_list = split(sample_string)
     reversed = []
     i = len(sample_string) - 1
     while i > -1:
