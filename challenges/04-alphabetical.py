@@ -3,11 +3,14 @@
 # lists and strings instead.
 
 
-# Ask the user for a string to alphabetize
-choice = input("Give me a string to alphabetize \n")
-
 #  Sort the string into list of letters ascending then join them together
 # [ 'a', 'a', 'b' ...]
 #  Must make a new string
-str = ''.join(sorted(choice))
-print(str)
+def alphabetize_string(str):
+    return ''.join(sorted(str))
+
+# Ask the user for a string to alphabetize
+choice = input("Give me a string to alphabetize \n")
+
+print(alphabetize_string(choice))
+
