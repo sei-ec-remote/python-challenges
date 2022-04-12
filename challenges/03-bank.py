@@ -11,6 +11,7 @@
 balance = 0
 transacting = True
 
+# prompts user if they want to close the transaction
 def are_you_done():
     done = input("Are you done? (yes/no)")
     if(done == 'yes'):
