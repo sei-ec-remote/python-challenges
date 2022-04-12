@@ -30,3 +30,22 @@
 # yes
 # Thank you!
 # ```
+print("Welcome to Chase bank.")
+current_balance = 4000
+option = input(
+    "What  would you like to do? (deposit, withdraw, check_balance)")
+
+if (option == "check_balance"):
+    print(current_balance)
+elif (option == "withdraw"):
+    withdraw = int(input("how much would you like to withdraw?"))
+    print(f"your current balance is: {current_balance - withdraw}")
+elif (option == "deposit"):
+    deposit = int(input("how much would you like to deposit?"))
+    print(f"your current balance is: {current_balance + deposit}")
+else:
+    response = input("Are you done?")
+    if response == "yes":
+        print("thank you!")
+    else:
+        print("please start at the beginning to prompt your new withdraw, deposit or to check_balance")
