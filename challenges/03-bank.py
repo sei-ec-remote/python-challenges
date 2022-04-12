@@ -19,7 +19,7 @@ def are_you_done():
         transacting = False
         return print("Thank you, have a great day!")
      
-while (transacting == True):
+while transacting:
     transaction  = input('What would you like to do? (deposit, withdraw, check_balance)')
     if(transaction == 'deposit'):
         deposit_amount = input('How much would you like to deposit?')
