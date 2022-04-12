@@ -6,6 +6,5 @@ def alphabetize(string):
     alpha_string = list(string)
     output = "".join(sorted(alpha_string))
     print(f"Alphabetized: {output}")
-    
 
 alphabetize(string = input("Give me a string to alphabetize:\n"))
