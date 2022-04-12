@@ -5,10 +5,10 @@
 
 def calc():
     # declare all of the inputs I need
-    method = input('What calculation would you like to do? (add,sub.mult,div)')
+    method = input('What calculation would you like to do? (add,sub.mult,div)\n')
     # nums must use int to convert to number instead o string
-    num1 = int(input('What is the first number?'))
-    num2 = int(input('What is the second number?'))
+    num1 = int(input('What is the first number?\n'))
+    num2 = int(input('What is the second number?\n'))
 
     #  declare the different types of math that can be refrenced later in the func
     types = {
