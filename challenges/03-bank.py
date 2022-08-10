@@ -22,6 +22,8 @@ def cycle(balance):
             newbal = balance
     elif action=="check_balance":
         newbal = balance
+    else:
+        print("invalid action")
 
     print("your balance is now: " + str(newbal) + " $")
     end = input("done? (yes,no)\n")
