@@ -14,3 +14,15 @@
 # Enter a string:
 # reverse_me
 # em_esrever
+
+def reverse_string(string):
+    str_list=list(string)
+    str_list.reverse()
+    reverse_str = "".join(str_list)
+    print(reverse_str)
+
+    #for letter in string:
+
+        
+reverse_string("castaways")
+# reverse_string("taco")

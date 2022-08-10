@@ -18,5 +18,42 @@
 # Thank you!
 
 print("Welcome to Chase bank.")
-print("Have a nice day!")
+current_balance = int(input('Your current balance is: \n'))
+operation = input('What would you like to do? (deposit, withdraw, check_balance) \n')
+if operation == 'deposit':
+    number_two = int(input('How much would you like to deposit? \n'))
+elif operation == 'withdraw':
+    number_two = int(input('How much would you like to withdraw? \n'))
+elif operation == 'check_balance':
+    print(f'Your balance is {current_balance}. \n')
+else:
+    print('Please double check the action you selected at top. It must match one of the three listed values! \n')
 
+if operation == 'deposit':
+    current_balance = current_balance + number_two
+    print(f'Your current balance is {current_balance}.')
+elif operation == 'withdraw':
+    current_balance = current_balance - number_two
+    print(f'Your current balance is {current_balance}.')
+
+are_done = input('Are you done? (yes, no)')
+if are_done == 'yes':
+    print('Thank you! Have a nice day!')
+else: 
+    print(f'Your current balance is: {current_balance}.')
+    operation = input('What would you like to do? (deposit, withdraw, check_balance) \n')
+    if operation == 'deposit':
+        number_two = int(input('How much would you like to deposit? \n'))
+    elif operation == 'withdraw':
+        number_two = int(input('How much would you like to withdraw? \n'))
+    elif operation == 'check_balance':
+        print(f'Your balance is {current_balance}. \n')
+    else:
+        print('Please double check the action you selected at top. It must match one of the three listed values! \n')
+        
+    if operation == 'deposit':
+        current_balance = current_balance + number_two
+        print(f'Your current balance is {current_balance}.')
+    elif operation == 'withdraw':
+        current_balance = current_balance - number_two
+        print(f'Your current balance is {current_balance}.')

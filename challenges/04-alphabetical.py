@@ -8,3 +8,13 @@
 # Give me a string to alphabetize
 # supercalifragilisticexpialidocious
 # Alphabetized: aaacccdeefgiiiiiiillloopprrssstuux
+
+def alphabetize_string(string):
+    alpha_list=list(string)
+    alpha_list.sort()
+    print("".join(alpha_list))
+    # print(alpha_str)
+
+alphabetize_string("pikachu")
+
+alphabetize_string("supercalifragilisticexpialidocious")
