@@ -12,3 +12,4 @@ def alphabetize(string):
     print("".join(str_list))
 
 alphabetize('supercalifragilisticexpialidocious')
+alphabetize('Alphabetizecompleted')
