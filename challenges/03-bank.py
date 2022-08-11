@@ -33,14 +33,14 @@ while over == "no":
         withdraw_amount = input("How much would you like to withdraw?\n")
         if int(withdraw_amount) > int(balance):
             print("Insufficient fund!")
-            finish = input("Are you done? (yes or no)\n")
+            over = input("Are you done? (yes or no)\n")
         else:
             balance = balance - int(withdraw_amount)
             print(f"Your current balance is ${int(balance)}")
-            finish = input("Are you done? (yes or no)\n")
+            over = input("Are you done? (yes or no)\n")
     if action == "check_balance":
         print(f"Your current balance is ${balance}")
-        finish = input("Are you done? (yes or no)\n")
+        over = input("Are you done? (yes or no)\n")
 
 print("Thank you! Go get dat MONEY!!!")
 
