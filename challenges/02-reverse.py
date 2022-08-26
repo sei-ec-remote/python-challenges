@@ -6,3 +6,15 @@
 # several ways to reverse a string, and it's a good read!
 #
 # http://www.techbeamers.com/essential-python-tips-tricks-programmers/?utm_source=mybridge&utm_medium=blog&utm_campaign=read_more#tip1
+
+reverse_string = input('enter a string to reverse:\n')
+reverser_array = []
+the_word = reverse_string.split()
+
+for letter in reverse_string:
+    if len(reverser_array) < len(reverse_string):
+        reverser_array.insert(0, letter)
+
+        if len(reverser_array) == len(reverse_string):
+            print('word reversed:')
+            print(''.join(reverser_array))
