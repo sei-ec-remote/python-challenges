@@ -37,6 +37,9 @@ while True:
             print(num1, "*", num2, "=", multiply(num1, num2))
         elif choice == 'add':
             print(num1, "/", num2, "=", divide(num1, num2))
-        break
+        done = input("Would you like to do another calculation? (yes/no): ")
+        if done == 'no':
+            print("Thank you for using calculator!")
+            break
     else:
         print("Invalid input, Please enter one of the choices.")
