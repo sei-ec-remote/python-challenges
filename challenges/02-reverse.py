@@ -6,3 +6,20 @@
 # several ways to reverse a string, and it's a good read!
 #
 # http://www.techbeamers.com/essential-python-tips-tricks-programmers/?utm_source=mybridge&utm_medium=blog&utm_campaign=read_more#tip1
+
+s = input('What to reverse?: ')
+
+def reverse(s):
+    if len(s) == 0:
+        return s
+    else:
+        return reverse(s[1:]) + s[0]
+ 
+ 
+# s = "Geeksforgeeks"
+ 
+print("The original string is : ", end="")
+print(s)
+ 
+print("The reversed string is : ", end="")
+print(reverse(s))
