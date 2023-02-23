@@ -12,7 +12,7 @@
 
 def order_alphabets():
     string = input("Give me a string to alphabetize: ")
-    # string = string.lower()
+    string = string.lower()
     string = list(string)
     string.sort()
     string = "".join(string)
