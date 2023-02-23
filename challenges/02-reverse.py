@@ -17,3 +17,16 @@
 # em_esrever
 
 
+def reverse_string():
+
+    string = input("Enter a string: ")
+
+    new_string = ""
+
+    for i in range(len(string)):
+        new_string += string[len(string) - 1 - i]
+
+    print(new_string)
+
+
+reverse_string()
