@@ -5,13 +5,24 @@
 
 addition = 'add'
 subtraction = 'sub'
-mult = 'mult'
-div = 'div'
+multiplication = 'mult'
+division = 'div'
 
 operation = input('What calculation would you like to do? (add, sub, mult, div): ').lower()
 
 if (operation in addition):
     num1 = input('What is number 1?: ')
     num2 = input('What is number 2?: ')
-    print('Your total is ', int(num1) + int(num2))
-
+    print('Your result is ', int(num1) + int(num2))
+elif (operation in subtraction):
+    num1 = input('What is number 1?: ')
+    num2 = input('What is number 2?: ')
+    print('Your result is ', int(num1) - int(num2))
+elif (operation in multiplication):
+    num1 = input('What is number 1?: ')
+    num2 = input('What is number 2?: ')
+    print('Your result is ', int(num1) * int(num2))
+elif (operation in division):
+    num1 = input('What is number 1?: ')
+    num2 = input('What is number 2?: ')
+    print('Your result is ', int(num1) // int(num2))
