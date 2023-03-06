@@ -10,10 +10,13 @@ result = 0
 
 if action == '+':
     result = input1 + input2
+
 elif action == '-':
     result = input1 - input2
+
 elif action == '/':
     result = input1 / input2
+    
 elif action == '*':
     result = input1 * input2
 
