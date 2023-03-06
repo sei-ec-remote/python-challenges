@@ -16,16 +16,16 @@ elif action == 'deposit':
     print(f'Your new balance is ${balance}.')
 
 elif action == 'withdraw':
-    amount = int(input('What amount? '))
+    amount = int(input('How much? '))
     
     balance -= amount
 
-    print(f'your new balance is ${balance}')
+    print(f'Your new balance is ${balance}.')
 
     if (balance < 0):
         print(f'You have overdrawn your account. Please transfer funds to resolve your balance.')
 
 else:
-    print('Invalid Input')
+    print('Invalid Input, please try again.')
 
 print("Thank you for banking with Python 🐍. Have a nice day!")
